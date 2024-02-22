@@ -606,9 +606,9 @@ body.light-theme {
 
 
 /*=============== CONTACT ===============*/
-.contact__container {
+/* .contact__container {
   row-gap: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
   display: grid;
   justify-content:center;
 }
@@ -616,6 +616,15 @@ body.light-theme {
   row-gap: 3rem;
   display:grid;
   
+} */
+
+.contact__container,
+.contact__container_twitter {
+  display: grid;
+  padding-bottom: 6rem;
+  row-gap: 2rem;
+  padding-top: 1rem;
+  justify-content:center;
 }
 
 .contact__title {
@@ -817,14 +826,19 @@ body.light-theme {
     column-gap: 0.25rem;
   }
 
-  .contact__container {
+  /* .contact__container {
     grid-template-columns: repeat(1, 230px);
     column-gap: 4rem;
   }
+  .contact__container_twitter{
+    grid-template-columns: repeat(1, 230px);
+    column-gap: 4rem;
+
+  } */
 
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 420px) {
   .work__container {
     justify-content:center;
     grid-template-columns: repeat(1, max-content);
@@ -833,6 +847,14 @@ body.light-theme {
   .work__img {
     width:165px;
   }
+
+  /* .contact__container {
+    justify-content:center;
+    grid-template-columns: repeat(1, max-content);
+  } */
+
+
+
 }
 
 /* For medium devices */
@@ -889,15 +911,24 @@ body.light-theme {
 
   
 
-  .contact__container {
-    display: grid;
+  /* .contact__container {
+    display: flex;
     grid-template-columns: 220px 340px;
     column-gap: 2rem;
     justify-content: center;
-    grid-template-columns: repeat(1, 430px);
+    grid-template-columns: repeat(1, 130px);
     column-gap: 6rem;
     
-  }
+  } */
+  /* .contact__container_twitter{
+    display: flex;
+    grid-template-columns: 220px 340px;
+    column-gap: 2rem;
+    justify-content: center;
+    grid-template-columns: repeat(1, 130px);
+    column-gap: 6rem;
+    
+  } */
 
   .contact__info {
     grid-template-columns: 200px;
@@ -1033,7 +1064,7 @@ body.light-theme {
 
   .contact__container {
     grid-template-columns: repeat(2, 430px);
-    column-gap: 6rem;
+    column-gap: 3rem;
   }
 
   .footer__social-link {
@@ -1047,4 +1078,20 @@ body.light-theme {
   display: flex;
   justify-content: center;
   padding: 60px;
+}
+
+
+
+@media screen and (max-width: 629px) {
+  .contact__container,
+  .contact__container_twitter {
+    display: block;
+    text-align: center;
+  }
+  
+  .contact__card,
+  .contact__card_twitter {
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+  }
 }
