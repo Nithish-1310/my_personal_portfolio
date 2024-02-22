@@ -1097,7 +1097,7 @@ body.light-theme {
   }
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 530px) {
   .contact__container,
   .contact__container_twitter {
     display: block;
@@ -1106,7 +1106,7 @@ body.light-theme {
   
   .contact__card,
   .contact__card_twitter {
-    width: calc(70% - 4rem);
+    width: calc(80% - 4rem);
     margin: 0 auto;
     margin-bottom: 2rem;
   }
