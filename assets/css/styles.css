@@ -1091,7 +1091,23 @@ body.light-theme {
   
   .contact__card,
   .contact__card_twitter {
-    width: calc(100% - 2rem);
+    width: calc(90% - 4rem);
     margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .contact__container,
+  .contact__container_twitter {
+    display: block;
+    text-align: center;
+  }
+  
+  .contact__card,
+  .contact__card_twitter {
+    width: calc(70% - 4rem);
+    margin: 0 auto;
+    margin-bottom: 2rem;
   }
 }
