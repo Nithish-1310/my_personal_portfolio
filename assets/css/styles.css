@@ -764,8 +764,8 @@ body.light-theme {
   }
 
   .home__handle {
-    width: 153px;
-    height: 100px;
+    width: 250px;
+    height: 160px;
     justify-self: center;
     background: rgb(217, 214, 214);
     border-radius: 1rem; 
